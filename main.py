@@ -1,7 +1,25 @@
 from Math import add_numbers, subtract_numbers
+from Tarea.CalculadoraSOE.functions.menu import mostrar_menu
+from Tarea.CalculadoraSOE.functions.saludo import pedir_nombre, saludar
 
 def main():
+
+    nombre = pedir_nombre()
+    saludar(nombre)
+
     try:
+
+        while True:
+            mostrar_menu()
+
+            opcion = input("Seleccione una opción: ")
+
+            if opcion == "0":
+                print("Saliendo del sistema...")
+                break
+            else:
+                print(f"Elegiste la opción {opcion}")
+
         # Pedir los números al usuario
         num1 = float(input("Ingresa el primer número: "))
         num2 = float(input("Ingresa el segundo número: "))
