@@ -14,4 +14,5 @@ def add_numbers(a: float, b: float) -> float:
         float: The result of a + b.
     """
     # Realiza la suma de los parámetros de entrada
+    print("el resultado de la suma es")
     return a + b
